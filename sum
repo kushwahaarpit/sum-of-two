@@ -1,0 +1,11 @@
+int getSum(uint a, uint b)
+{
+   
+    while (b != 0) 
+    { 
+        uint carry = a & b;   
+        a = a ^b;  
+        b = carry << 1; 
+    } 
+    return a; 
+}
